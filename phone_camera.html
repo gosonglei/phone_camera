@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content= "width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <title><%=title%></title>
+</head>
+<body>
+<h1>上传头像</h1>
+<div class = "wrapper">
+    <span class="user-avatar">用户头像：</span>
+    <input type = "file" accept="image/*" capture="camera" id="img" class="input-upload-image"/>
+    <img class="upload-btn events-pointer-none" src="/images/img_upload.png" id="imgInfo"/>
+</div>
+<div id="showResult" class="show-result">
+</div>
+<div class="overlay" id="overlay">
+    <img src="/images/loading.gif" alt="加载中...">
+</div>
+<script type="text/javascript" src="/javascripts/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="/image.js"></script>
+<script type="text/javascript" src="/upimage.js"></script>
+</body>
+</html>
